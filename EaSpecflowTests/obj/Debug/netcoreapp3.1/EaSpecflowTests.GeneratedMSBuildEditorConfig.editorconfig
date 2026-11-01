@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = EaSpecflowTests
-build_property.ProjectDir = C:\Kit\Download\Automation Framework Development with Playwright in C# .NET\EaTestAutomation\EaSpecflowTests\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
