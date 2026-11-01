@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6zG1FMOmIfQ=",
+  "dgSpecHash": "Snt9ic89bxw=",
   "success": true,
-  "projectFilePath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaApplicationTest\\EaApplicationTest.csproj",
+  "projectFilePath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaApplicationTest\\EaApplicationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tdcri\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
     "C:\\Users\\tdcri\\.nuget\\packages\\autofixture.xunit2\\4.18.0\\autofixture.xunit2.4.18.0.nupkg.sha512",

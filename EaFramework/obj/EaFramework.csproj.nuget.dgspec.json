@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\EaFramework.csproj": {}
+    "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\EaFramework.csproj": {}
   },
   "projects": {
-    "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\EaFramework.csproj": {
+    "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\EaFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\EaFramework.csproj",
+        "projectUniqueName": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\EaFramework.csproj",
         "projectName": "EaFramework",
-        "projectPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\EaFramework.csproj",
+        "projectPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\EaFramework.csproj",
         "packagesPath": "C:\\Users\\tdcri\\.nuget\\packages\\",
-        "outputPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\obj\\",
+        "outputPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tdcri\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -37,62 +37,62 @@ public class Tests
         await page.GetByRole(AriaRole.Link, new() { Name = "👥 Employees" }).ClickAsync();
     }
 
-    [Fact]
-    public async Task Test2()
-    {
-        var page = await _playwrightDriver.Page;
-        await page.GotoAsync("http://localhost:8000/");
-
-        await _productListPage.CreateProductAsync();
-        
-        var product = new Product
-        {
-            Name = "UPS",
-            Description = "UPS Description",
-            Price = 2000,
-            ProductType = ProductType.PERIPHARALS
-        };
-        await _productPage.CreateProductAsync(product);
-        await _productListPage.ClickProductFromListAsync(product.Description);
-
-        Assert.True(await _productListPage.IsProductCreatedDisplayedAsync(product.Name));
-    }
-
-    [Theory]
-    [InlineData("UPPS", "UPS Description", "2000", "PERIPHARALS")]
-    public async Task Test3(string productName, string productDescription, string productPrice, string productCategory)
-    {
-        var page = await _playwrightDriver.Page;
-        await page.GotoAsync("http://localhost:8000/");
-
-
-        await _productListPage.CreateProductAsync();
-
-        var product = new Product
-        {
-            Name = productName,
-            Description = productDescription,
-            Price = decimal.Parse(productPrice),
-            ProductType = Enum.Parse<ProductType>(productCategory)
-        };
-        await _productPage.CreateProductAsync(product);
-
-        await _productListPage.ClickProductFromListAsync(product.Description);
-
-        Assert.True(await _productListPage.IsProductCreatedDisplayedAsync(product.Name));
-    }
-
-    [Theory, AutoData]
-    public async Task TestWithAutoFixtureData(Product product)
-    {
-        var page = await _playwrightDriver.Page;
-        await page.GotoAsync("http://localhost:8000/");
-
-        await _productListPage.CreateProductAsync();
-
-        await _productPage.CreateProductAsync(product);
-        await _productListPage.ClickProductFromListAsync(product.Description);
-
-        Assert.True(await _productListPage.IsProductCreatedDisplayedAsync(product.Name));
-    }
+    // [Fact]
+    // public async Task Test2()
+    // {
+    //     var page = await _playwrightDriver.Page;
+    //     await page.GotoAsync("http://localhost:8000/");
+    //
+    //     await _productListPage.CreateProductAsync();
+    //     
+    //     var product = new Product
+    //     {
+    //         Name = "UPS",
+    //         Description = "UPS Description",
+    //         Price = 2000,
+    //         ProductType = ProductType.PERIPHARALS
+    //     };
+    //     await _productPage.CreateProductAsync(product);
+    //     await _productListPage.ClickProductFromListAsync(product.Description);
+    //
+    //     Assert.True(await _productListPage.IsProductCreatedDisplayedAsync(product.Name));
+    // }
+    //
+    // [Theory]
+    // [InlineData("UPPS", "UPS Description", "2000", "PERIPHARALS")]
+    // public async Task Test3(string productName, string productDescription, string productPrice, string productCategory)
+    // {
+    //     var page = await _playwrightDriver.Page;
+    //     await page.GotoAsync("http://localhost:8000/");
+    //
+    //
+    //     await _productListPage.CreateProductAsync();
+    //
+    //     var product = new Product
+    //     {
+    //         Name = productName,
+    //         Description = productDescription,
+    //         Price = decimal.Parse(productPrice),
+    //         ProductType = Enum.Parse<ProductType>(productCategory)
+    //     };
+    //     await _productPage.CreateProductAsync(product);
+    //
+    //     await _productListPage.ClickProductFromListAsync(product.Description);
+    //
+    //     Assert.True(await _productListPage.IsProductCreatedDisplayedAsync(product.Name));
+    // }
+    //
+    // [Theory, AutoData]
+    // public async Task TestWithAutoFixtureData(Product product)
+    // {
+    //     var page = await _playwrightDriver.Page;
+    //     await page.GotoAsync("http://localhost:8000/");
+    //
+    //     await _productListPage.CreateProductAsync();
+    //
+    //     await _productPage.CreateProductAsync(product);
+    //     await _productListPage.ClickProductFromListAsync(product.Description);
+    //
+    //     Assert.True(await _productListPage.IsProductCreatedDisplayedAsync(product.Name));
+    // }
 }

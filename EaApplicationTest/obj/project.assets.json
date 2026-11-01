@@ -7268,11 +7268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaApplicationTest\\EaApplicationTest.csproj",
+      "projectUniqueName": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaApplicationTest\\EaApplicationTest.csproj",
       "projectName": "EaApplicationTest",
-      "projectPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaApplicationTest\\EaApplicationTest.csproj",
+      "projectPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaApplicationTest\\EaApplicationTest.csproj",
       "packagesPath": "C:\\Users\\tdcri\\.nuget\\packages\\",
-      "outputPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaApplicationTest\\obj\\",
+      "outputPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaApplicationTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tdcri\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7288,8 +7288,8 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\EaFramework.csproj": {
-              "projectPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\EaTestAutomation\\EaFramework\\EaFramework.csproj"
+            "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\EaFramework.csproj": {
+              "projectPath": "C:\\Kit\\Download\\Automation Framework Development with Playwright in C# .NET\\PlaywrightCDCI\\EaFramework\\EaFramework.csproj"
             }
           }
         }
