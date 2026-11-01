@@ -1,0 +1,18 @@
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace EaFramework.Config;
+
+public static class ConfigReader
+{
+    public static TestSettings ReadConfig()
+    {
+        var configFile = File.ReadAllText("appsettings.json");
+        var jsonSerializerSettings = new JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        jsonSerializerSettings.Converters.Add(new JsonStringEnumConverter());
+        return JsonSerializer.Deserialize<TestSettings>(configFile, jsonSerializerSettings) ?? new TestSettings();
+    }
+}

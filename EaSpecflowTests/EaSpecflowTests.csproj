@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <RootNamespace>EaTestAutomation</RootNamespace>
+        <!-- SpecFlow supplies the test framework; EaFramework brings in Xunit.DependencyInjection transitively. -->
+        <EnableXunitDependencyInjectionDefaultTestFrameworkAttribute>false</EnableXunitDependencyInjectionDefaultTestFrameworkAttribute>
+        <EnableXunitDependencyInjectionDefaultStartupTypeAttribute>false</EnableXunitDependencyInjectionDefaultStartupTypeAttribute>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0"/>
+        <PackageReference Include="Microsoft.Playwright" Version="1.64.1"/>
+        <PackageReference Include="SolidToken.SpecFlow.DependencyInjection" Version="3.9.3" />
+        <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.*"/>
+        <PackageReference Include="SpecFlow.xUnit" Version="3.9.74"/>
+        <PackageReference Include="xunit" Version="2.9.2"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="FluentAssertions" Version="5.10.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\EaFramework\EaFramework.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
